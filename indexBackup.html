@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오시</title>
+    <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+//          background-color: #f8f8f8;
+	    background-color: #728438;
+	    color: #FFFFFF;
+        }
+        .menu-buttons {
+            display: flex;
+            width: 90%;
+            margin: 10px 0;
+            justify-content: space-between;
+        }
+        .menu-buttons button, .submenu-buttons button {
+            flex: 1;
+            padding: 15px;
+            margin: 5px;
+            font-size: 1.2em;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-buttons button:hover, .submenu-buttons button:hover {
+            background-color: #555;
+        }
+        .submenu-buttons {
+            display: none;
+            flex-direction: column;
+            width: 90%;
+            margin: 10px 0;
+        }
+        .menu-display {
+            width: 90%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .menu-item p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+	.square{
+		height:25px;
+		weight:25px;
+	}
+	p{
+		font-weight: bold;
+	}
+    </style>
+	<body>
+	<img src="oshiLogo.png" alt="오시 로고" onclick="javascript:location.reload();">
+  <h1>오시익스프레스 더현대서울점</h1>
+    <div class="menu-buttons">
+        <button onclick="showSubmenu('osimodan')">오시모단야끼</button>
+        <button onclick="showSubmenu('oshinomi')">오시노미야끼</button><br>
+        <button onclick="showSubmenu('yakkisoba')">야끼소바삼겹살말이</button>
+	<button onclick="showSubmenu('beverages')">음료수</button>
+    </div>
+    <div id="osimodan" class="submenu-buttons">
+        <div class="menu-item">
+            <img src="osimodan.jpg" alt="오시모단야끼" style="weight:400px; height:300px;">
+	    <p><오시모단야끼 Oshimodanyaki></p>
+            <p>&#8361;17,000</p>
+	    <span>오시 스타일로 해석한 면과 함께 구운 든든한 오꼬노미야끼</span>
+	    <span>양배추, 파채, 소고기, 돼지고기, 오징어, 새우, 삼겹살, 계란, 체다치즈, 면</span>
+        </div>
+    </div>
+    <div id="oshinomi" class="submenu-buttons">
+        <div class="menu-item">
+            <img src="oshinomi.jpg" alt="오시노미야끼" style="weight:400px; height:300px;">
+	    <p><오시노미야끼 Oshinomiyaki></p>
+            <p>&#8361;12,000</p>
+	    <span>감귤로 만든 오꼬노미야끼 소스와 소, 돼지, 새우, 오징어, 대파, 가쓰오부시</span>
+        </div>
+        <div class="menu-item">
+            <img src="kimchi_oshinomi.jpg" alt="김치오시노미야끼" style="weight:400px; height:300px;">
+	    <p><김치 오시노미야끼 Kimchi Oshinomiyaki></p>
+            <p>&#8361;15,000</p>
+	    <span>김치와 가쓰오로 만드는 감칠맛 가득 한국 취향 저격 오꼬노미야끼</span>
+        </div>
+        <div class="menu-item">
+            <img src="tomato_balsamic_oshinomi.jpg" alt="토마토발사믹오시노미야끼" style="weight:400px; height:300px;">
+	    <p><토마토 발사믹 오시노미야끼 Tomato Balsamic Oshinomiyaki></p>
+            <p>&#8361;15,000</p>
+	    <span>단짠단짠 철판에 구운 토마토와 함께 먹는 오꼬노미야끼</span>
+        </div>
+        <div class="menu-item">
+            <img src="cheese_oshinomi.jpg" alt="치즈오시노미야끼" style="weight:400px; height:300px;">
+	    <p><치즈 오시노미야끼 Cheese Oshinomiyaki></p>
+            <p>&#8361;14,000</p>
+	    <span>치즈를 좋아하시는 분들에겐 강력 추천드리는 맛없으면 반칙인 오꼬노미야끼</span>
+        </div>
+        <div class="menu-item">
+            <img src="egg_omelette_oshinomi.jpg" alt="계란오믈렛오시노미야끼" style="weight:400px; height:300px;">
+	    <p><계란 오믈렛 오시노미야끼 Egg Omelette Oshinomiyaki></p>
+            <p>&#8361;14,000</p>
+	    <span>촉촉한 철판 오믈렛과 함께 먹는 부드러운 오꼬노미야끼</span>
+        </div>
+    </div>
+    <div id="yakkisoba" class="submenu-buttons">
+		 <div class="menu-item">
+            <img src="yakkisoba.jpg" alt="야끼소바삼겹살말이" style="weight:400px; height:300px;">
+	    <p><야끼소바삼겹살말이 Yakisoba Pork belly Roll></p>
+            <p>&#8361;11,000</p>
+	    <span>삼겹살, 치즈를 말아 구운 오시 시그니처 야끼소바</span>
+        </div>
+        <div class="menu-item">
+            <img src="kimchi_yakkisoba.jpg" alt="김치야끼소바삼겹살말이" style="weight:400px; height:300px;">
+	    <p><김치 야끼소바삼겹살말이 Kimchi Yakisoba Pork belly Roll></p>
+            <p>&#8361;12,000</p>
+	    <span>한국인 취향 저격 강추 야끼소바 삼겹살 말이</span>
+        </div>
+        <div class="menu-item">
+            <img src="spicy_yakkisoba.jpg" alt="청양고추야끼소바삼겹살말이" style="weight:400px; height:300px;">
+	    <p><청양고추 야끼소바삼겹살말이 Cheongyang pepper Yakisoba Pork belly Roll></p>
+            <p>&#8361;11,500</p>
+	    <span>너무 매운 건 싫고 느끼한 맛은 잡아주길 원하는 분들에게 추천드리는 야끼소바 삼겹살 말이</span>
+        </div>
+        <div class="menu-item">
+            <img src="tomato_balsamic_yakkisoba.jpg" alt="토마토발사믹야끼소바삼겹살말이" style="weight:400px; height:300px;">
+	    <p><토마토 발사믹 야끼소바삼겹살말이 Tomato Balsamic Yakisoba Pork belly Roll></p>
+            <p>&#8361;12,000</p>
+	    <span>단짠단짠 토마토와 함께 먹는 야끼소바 삼겹살 말이</span>
+        </div>
+    </div>
+    <div id="beverages" class="submenu-buttons">
+		 <div class="menu-item">
+            <img src="coke.jpg" alt="코카콜라">
+	    <p><코카콜라 Coke></p>
+            <p>&#8361;2,500</p>
+        </div>
+        <div class="menu-item">
+            <img src="coke_zero.jpg" alt="코카콜라제로">
+	    <p><코카콜라 제로 Coke Zero></p>
+	    <p>&#8361;2,500</p>
+        </div>
+        <div class="menu-item">
+            <img src="sprite.jpg" alt="청양고추야끼소바삼겹살말이">
+	    <p><스프라이트 Sprite></p>
+	    <p>&#8361;2,500</p>
+        </div>
+    </div>
+    <div class="menu-display" id="menu-display">
+	<p>주문방법(How to order)</p><br>
+	<span>1. 메뉴 선택(Choice Menu)</span><br>
+	<span>2. 클래식 소스 / 카라이 소스 中택1 (Choose one non-Spicy/Spicy per Menu) </span><br>
+	<p><맵기 단계></p><br>
+	<div style="display:flex;">
+		클래식(Classic)<div class="square" style="background-color:#FFEBEB"></div><div class="square" style="background-color:#FFD5D5"></div><img src="shin.png" alt="신라면" style="weight:25px; height:25px;"><div class="square" style="background-color:#FFA9A9"></div><div class="square" style="background-color:#FF9393"></div><div class="square" style="background-color:#FF7D7D"></div>카라이(Karai)<div class="square" style="background-color:#FF5151"></div><img src="buldak.png" alt="불닭볶음면" style="weight:25px; height:25px;">
+	</div>
+        <h1>오시는길</h1>
+	<span>서울 영등포구 여의대로 108 더현대 서울 B1층</span><br>
+	<span>오시익스프레스</span><br>
+	<img src="b1map.png" style="weight:300px; height:200px; align-item:center;"><br><br>
+	<a href="https://www.instagram.com/oshi_official__"><img src="instagram.png" style="weight:50px; height:50px;"></a>
+    </div>
+
+    <script>
+        function showSubmenu(menu) {
+            document.querySelectorAll('.submenu-buttons').forEach(submenu => {
+                submenu.style.display = 'none';
+            });
+            document.getElementById(menu).style.display = 'flex';
+            //const display = document.getElementById('menu-display');
+            document.getElementById('menu-display').innerHTML = '';
+            const items = document.getElementById(menu).querySelectorAll('.menu-item');
+            items.forEach(item => {
+                display.appendChild(item.cloneNode(true));
+            });
+        }
+    </script>
+</body>
+</html>
