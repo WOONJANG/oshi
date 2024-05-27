@@ -79,7 +79,7 @@ body {
         <button onclick="showSubmenu('osimodan')">오시모단야끼</button>
         <button onclick="showSubmenu('oshinomi')">오시노미야끼</button><br>
         <button onclick="showSubmenu('yakkisoba')">야끼소바삼겹살말이</button>
-	<button onclick="showSubmenu('beverages')">음료수</button>
+	<button onclick="showSubmenu('beverages')">음료수 및 추가메뉴</button>
     </div>
     <div id="osimodan" class="submenu-buttons">
         <div class="menu-item">
@@ -150,19 +150,24 @@ body {
     </div>
     <div id="beverages" class="submenu-buttons">
 		 <div class="menu-item">
-            <img src="coke.jpg" alt="코카콜라" style="width: 300px; height:300px;">
+            <img src="coke.png" alt="코카콜라" style="width: 300px; height:300px;">
 	    <p><코카콜라 Coke></p>
             <p>&#8361;2,500</p>
         </div>
         <div class="menu-item">
-            <img src="coke_zero.jpg" alt="코카콜라제로" style="width: 300px; height:300px;">
+            <img src="coke_zero.png" alt="코카콜라제로" style="width: 300px; height:300px;">
 	    <p><코카콜라 제로 Coke Zero></p>
 	    <p>&#8361;2,500</p>
         </div>
         <div class="menu-item">
-            <img src="sprite.jpg" alt="스프라이트" style="width: 300px; height:300px;">
+            <img src="sprite.png" alt="스프라이트" style="width: 300px; height:300px;">
 	    <p><스프라이트 Sprite></p>
 	    <p>&#8361;2,500</p>
+        </div>
+	<div class="menu-item">
+            <img src="shrimp.jpg" alt="새우토핑" style="width: 300px; height:300px;">
+	    <p><새우토핑 Shrimp topping></p>
+	    <p>&#8361;3,000</p>
         </div>
     </div>
     <div class="menu-display" id="menu-display">
@@ -171,15 +176,22 @@ body {
 	<span>2. 클래식 소스 / 카라이 소스 中택1 (Choose one non-Spicy/Spicy per Menu) </span><br>
 	<p><소스 맵기 단계></p><br>
 	<div style="display:flex;">
-		클래식(Classic)<div class="square" style="background-color:#FFEBEB;"></div><div class="square" style="background-color:#FFD5D5;"></div><div class="square" style="background-color:#FFA9A9;"><img src="shin.png" alt="신라면" style="width:35px; height:35px;"></div><div class="square" style="background-color:#FF9393;"></div><div class="square" style="background-color:#FF7D7D;"></div>카라이(Karai)<div class="square" style="background-color:#FF5151"></div><img src="buldak.png" alt="불닭볶음면" style="width:35px; height:35px;">
+		클래식(Classic)<div class="square" style="background-color:#FFEBEB;"></div><div class="square" style="background-color:#FFD5D5;"></div><div class="square" style="background-color:#FFA9A9;"></div><img src="shin.png" alt="신라면" style="width:35px; height:35px;"><div class="square" style="background-color:#FF9393;"></div><div class="square" style="background-color:#FF7D7D;"></div>카라이(Karai)<div class="square" style="background-color:#FF5151"></div><img src="buldak.png" alt="불닭볶음면" style="width:35px; height:35px;">
 	</div>
+	    <div id="event_zone">
+		    <h1>이벤트</h1>
+	    <img src="reviewEventver1.jpg" style="width:300px; height:400px;">
+	    </div>
         <h1>오시는길</h1>
 	<span>서울 영등포구 여의대로 108 더현대 서울 B1층</span><br>
 	<span>오시익스프레스</span><br>
 	<img src="b1map.png" style="width:300px; height:200px; align-item:center;"><br><br>
 	<a href="https://www.instagram.com/oshi_official__"><img src="instagram.png" style="height:50px;"></a>
     </div>
-
+	<div style="bottom:0; text-align: center;">
+		<span style="font-size: 5px;">※상기 이미지는 실제와 다를 수 있습니다</span>
+<a href="https://github.com/WOONJANG"><footer>© 2024. 장운 All rights reserved.</footer></a>
+	</div>
     <script>
         function showSubmenu(menu) {
             document.querySelectorAll('.submenu-buttons').forEach(submenu => {
