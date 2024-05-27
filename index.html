@@ -12,7 +12,6 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-//          background-color: #f8f8f8;
 	    background-color: #728438;
 	    color: #FFFFFF;
         }
@@ -73,14 +72,17 @@ body {
 	}
     </style>
 	<body>
+		<!-- 상단 -->
 	<img src="oshiLogo.png" alt="오시 로고" onclick="javascript:location.reload();">
   <h1>오시익스프레스 더현대서울점</h1>
+		<!-- 상위 메뉴 -->
     <div class="menu-buttons">
         <button onclick="showSubmenu('osimodan')">오시모단야끼</button>
         <button onclick="showSubmenu('oshinomi')">오시노미야끼</button><br>
         <button onclick="showSubmenu('yakkisoba')">야끼소바삼겹살말이</button>
 	<button onclick="showSubmenu('beverages')">음료수 및 추가메뉴</button>
     </div>
+		<!-- 오시 모단-->
     <div id="osimodan" class="submenu-buttons">
         <div class="menu-item">
             <img src="osimodan.jpg" alt="오시모단야끼" style="width:400px; height:300px;">
@@ -90,6 +92,7 @@ body {
 	    <span>양배추, 파채, 소고기, 돼지고기, 오징어, 새우, 삼겹살, 계란, 체다치즈, 면</span>
         </div>
     </div>
+		<!-- 오시 노미미-->
     <div id="oshinomi" class="submenu-buttons">
         <div class="menu-item">
             <img src="oshinomi.jpg" alt="오시노미야끼" style="width:400px; height:300px;">
@@ -122,6 +125,7 @@ body {
 	    <span>촉촉한 철판 오믈렛과 함께 먹는 부드러운 오꼬노미야끼</span>
         </div>
     </div>
+		<!-- 야삼삼 -->
     <div id="yakkisoba" class="submenu-buttons">
 		 <div class="menu-item">
             <img src="yakkisoba.jpg" alt="야끼소바삼겹살말이" style="width:400px; height:300px;">
@@ -148,6 +152,7 @@ body {
 	    <span>단짠단짠 토마토와 함께 먹는 야끼소바 삼겹살 말이</span>
         </div>
     </div>
+		<!-- 음료 및 추가가-->
     <div id="beverages" class="submenu-buttons">
 		 <div class="menu-item">
             <img src="coke.png" alt="코카콜라" style="width: 300px; height:300px;">
@@ -170,6 +175,7 @@ body {
 	    <p>&#8361;3,000</p>
         </div>
     </div>
+		<!-- 중단 -->
     <div class="menu-display" id="menu-display">
 	<p>주문방법(How to order)</p><br>
 	<span>1. 메뉴 선택(Choice Menu)</span><br>
@@ -182,6 +188,7 @@ body {
 		    <h1>이벤트</h1>
 	    <img src="reviewEventver1.jpg" style="width:300px; height:400px;">
 	    </div>
+	    <!-- 하단 -->
         <h1>오시는길</h1>
 	<span>서울 영등포구 여의대로 108 더현대 서울 B1층</span><br>
 	<span>오시익스프레스</span><br>
